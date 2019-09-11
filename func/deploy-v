@@ -1,0 +1,2 @@
+#!/bin/sh
+kubectl get deployment -o=jsonpath="{range .items[*]}{.metadata.name}{'|'}{range .spec.template.spec.containers[*]}{.image}{'\n'}{end}{end}" --all-namespaces | column -t -s "|" 
