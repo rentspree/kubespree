@@ -11,7 +11,7 @@ Some of the awesome usage of Kubespree is aliasing some long script with `kubect
 For example, if you want to see image version of each deployment on your cluster, you can simply run
 
 ```bash
-$ kubespree deploy-v
+$ kubespree deploy -v
 
 # mail-queue                            rabbitmq:3
 # application-portal                    myapp/application-portal:934801b9

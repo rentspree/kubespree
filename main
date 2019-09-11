@@ -15,7 +15,7 @@ then
 fi
 
 if [ -f "$FILETORUN" ]; then
-    $FILETORUN
+    $FILETORUN $2
 else 
     echo "Command \"$1\" does not exist"
 fi
