@@ -1,3 +1,8 @@
-rm /usr/local/bin/kubespree
+KUBESPREE_PATH=/usr/local/bin/kubespree
 
-echo "done"
+if [ -f "$KUBESPREE_PATH" ]; then
+    rm $KUBESPREE_PATH
+    echo "Done"
+else 
+    echo "Nothing to Uninstall"
+fi
